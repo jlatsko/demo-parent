@@ -1,7 +1,7 @@
-package com.polarbookshop.catalogservice.web;
+package com.example.catalogservice.web;
 
-import com.polarbookshop.catalogservice.domain.BookNotFoundException;
-import com.polarbookshop.catalogservice.domain.BookService;
+import com.example.catalogservice.domain.BookNotFoundException;
+import com.example.catalogservice.domain.BookService;
 import org.junit.jupiter.api.Test;
 
 import org.springframework.beans.factory.annotation.Autowired;

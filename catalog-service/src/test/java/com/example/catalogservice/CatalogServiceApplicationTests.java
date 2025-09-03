@@ -1,6 +1,6 @@
-package com.polarbookshop.catalogservice;
+package com.example.catalogservice;
 
-import com.polarbookshop.catalogservice.domain.Book;
+import com.example.catalogservice.domain.Book;
 import org.junit.jupiter.api.Test;
 
 import org.springframework.beans.factory.annotation.Autowired;

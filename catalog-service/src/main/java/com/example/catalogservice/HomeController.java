@@ -1,6 +1,6 @@
-package com.polarbookshop.catalogservice;
+package com.example.catalogservice;
 
-import com.polarbookshop.catalogservice.config.PolarProperties;
+import com.example.catalogservice.config.PolarProperties;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

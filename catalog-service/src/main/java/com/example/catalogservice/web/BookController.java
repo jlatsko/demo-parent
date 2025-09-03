@@ -1,9 +1,9 @@
-package com.polarbookshop.catalogservice.web;
+package com.example.catalogservice.web;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
-import com.polarbookshop.catalogservice.domain.Book;
-import com.polarbookshop.catalogservice.domain.BookService;
+import com.example.catalogservice.domain.Book;
+import com.example.catalogservice.domain.BookService;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
