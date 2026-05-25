@@ -41,11 +41,12 @@ bytes_of() {
 
 human() {
   local b=$1
-  if   (( b >= 1073741824 )); then printf "%.2f GiB" "$(echo "scale=2; $b/1073741824" | bc)"
-  elif (( b >= 1048576 ))   ; then printf "%.2f MiB" "$(echo "scale=2; $b/1048576"    | bc)"
-  elif (( b >= 1024 ))      ; then printf "%.2f KiB" "$(echo "scale=2; $b/1024"       | bc)"
-  else printf "%d B" "$b"
-  fi
+  awk -v b="$b" 'BEGIN {
+    if      (b >= 1073741824) printf "%.2f GiB\n", b/1073741824
+    else if (b >= 1048576)   printf "%.2f MiB\n", b/1048576
+    else if (b >= 1024)      printf "%.2f KiB\n", b/1024
+    else                     printf "%d B\n",      b
+  }'
 }
 
 # Sort version directories using version-aware sort (newest first)
